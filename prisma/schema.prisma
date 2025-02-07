@@ -19,7 +19,18 @@ model User {
   image     String
   email     String   @unique
   createdAt DateTime @default(now())
+  chat      Chat[]
   provider  Provider
+}
+
+model Chat {
+  id        String   @id @default(uuid())
+  title     String
+  input     String   @db.Text
+  response  String   @db.Text
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId    String
+  createdAt DateTime @default(now())
 }
 
 enum Provider {
