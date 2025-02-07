@@ -22,7 +22,7 @@ const Navbar = () => {
           <div className='flex items-center space-x-12'>
             <Link href="/" className="flex items-center space-x-1">
               <Image src="/logo.png" width={30} height={30} priority={false} alt="Logo" unoptimized={true} className="rounded-xl" />
-              <span className="text-2xl font-bold">test</span>
+              <span className="text-2xl font-bold">Translator</span>
             </Link>
 
             <div

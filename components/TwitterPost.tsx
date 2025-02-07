@@ -61,7 +61,7 @@ export default function TwitterPost() {
           {`Hi, ${session ? session.user?.name : "Guest"}`}
         </h2>
         <p className="text-sm text-neutral-500 max-w-lg text-center">
-          Create engaging and professional Twitter posts effortlessly with testAI, your smart AI-powered writing assistant.
+          Create engaging and professional Twitter posts effortlessly with TranslatorAI, your smart AI-powered writing assistant.
         </p>
       </div>
       <div className="w-full relative p-2 bg-neutral-100 dark:bg-neutral-900 rounded-md border border-neutral-300 dark:border-neutral-700 flex flex-col items-center justify-center dark:shadow-none shadow ">

@@ -180,7 +180,7 @@ const HeroSection = () => {
                   {words[currentWord]}
                 </div>
               </motion.span>
-            </AnimatePresence>{''}hackathon landing page
+            </AnimatePresence>{''}translator landing page
           </h1>
         </div>
         <p className="text-primary/80 max-w-[34rem] text-center tracking-tight md:text-lg font-light">

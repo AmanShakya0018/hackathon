@@ -52,7 +52,7 @@ export default function Contact() {
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
                 <MailIcon className="h-6 w-6 text-primary" />
-                <span>contact@hackathon.com</span>
+                <span>contact@translator.com</span>
               </div>
               <div className="flex items-center space-x-4">
                 <PhoneIcon className="h-6 w-6 text-primary" />

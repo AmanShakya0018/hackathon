@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="mb-4 flex">
             <Link href="/" className="flex items-center space-x-1">
               <Image src="/logo.png" width={30} height={30} priority={false} alt="Logo" unoptimized={true} className="rounded-xl" />
-              <span className="text-2xl font-extrabold text-black dark:text-white ">test</span>
+              <span className="text-2xl font-extrabold text-black dark:text-white ">Translator</span>
             </Link>
           </div>
           <div className="mt-2">

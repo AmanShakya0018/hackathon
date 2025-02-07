@@ -6,18 +6,18 @@ export default function PostGeneratorSteps() {
       <div className="grid gap-6 md:grid-cols-3">
         <StepCard
           number={1}
-          title="Type Your Topic"
-          description="Enter the main topic or subject of your requested post."
+          title="Enter Your Text"
+          description="Type the text you want to translate in your desired language."
         />
         <StepCard
           number={2}
-          title="Select Style and Length"
-          description="Choose the writing style for your post and specify the number of words you want."
+          title="Click Generate"
+          description="Press the generate button to let AI process and translate your text."
         />
         <StepCard
           number={3}
-          title="Generate Your Post"
-          description="Click to generate your professional post based on your specifications."
+          title="Get Your Translation"
+          description="Receive the translated text in your selected language instantly."
         />
       </div>
     </div>

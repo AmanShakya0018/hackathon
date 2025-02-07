@@ -13,7 +13,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "testAI - Create LinkedIn and Twitter Posts",
+  title: "TranslatorAI - Create LinkedIn and Twitter Posts",
   description: "Generate professional LinkedIn and Twitter posts with ease. Enhance your social media presence with customized content."
 };
 

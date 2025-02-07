@@ -12,7 +12,7 @@ export default function AboutPage() {
           <div className="relative h-[400px] rounded-lg overflow-hidden">
             <Image
               src="/logo.png"
-              alt="hackathon "
+              alt="translator "
               width={500}
               height={500}
               priority
