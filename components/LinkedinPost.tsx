@@ -15,7 +15,7 @@ import { Textarea } from "./ui/textarea";
 import Result from "./Result";
 import usePost from "@/hooks/usePost";
 import useResult from "@/hooks/useResult";
-import useBehaviour from "@/hooks/useBehaviour";
+import useBehaviour from "@/hooks/useLanguage";
 import { FaArrowTurnUp } from "react-icons/fa6";
 import { Spinner } from "./ui/spinner";
 import PostGeneratorSteps from "./PostGeneratorSteps";

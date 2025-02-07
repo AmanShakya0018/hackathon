@@ -4,7 +4,7 @@ import { ThemeProvider } from "./theme-provider";
 import PostProvider from "@/context/PostContext";
 import ResultProvider from "@/context/ResultContext";
 import { SessionProvider } from "next-auth/react";
-import BehaviourProvider from "@/context/BehaviourContext";
+import BehaviourProvider from "@/context/LanguageContext";
 
 type Props = {
   children: ReactNode

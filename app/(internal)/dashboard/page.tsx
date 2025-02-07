@@ -11,7 +11,6 @@ import {
 } from "@/components/ui/select"
 import usePost from "@/hooks/usePost";
 import useResult from "@/hooks/useResult";
-import useBehaviour from "@/hooks/useBehaviour";
 import { FaArrowTurnUp } from "react-icons/fa6";
 import { useSession } from "next-auth/react";
 import { Textarea } from "@/components/ui/textarea";
@@ -20,6 +19,7 @@ import { useRouter } from "next/navigation";
 import Result from "@/components/Result";
 import PostGeneratorSteps from "@/components/PostGeneratorSteps";
 import { FaMicrophone } from "react-icons/fa";
+import useLanguage from "@/hooks/useLanguage";
 
 
 export default function TwitterPost() {
@@ -38,7 +38,7 @@ export default function TwitterPost() {
 
   const { post, setPost } = usePost();
   const { result, setResult } = useResult();
-  const { behaviour, setBehaviour } = useBehaviour();
+  const { language, setLanguage } = useLanguage();
   const [isGenerating, setIsGenerating] = useState(false);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
@@ -55,7 +55,7 @@ export default function TwitterPost() {
   const handleGenerate = async () => {
     try {
       setIsGenerating(true);
-      const response = await axios.post('/api/twitter/generate', { post, behaviour });
+      const response = await axios.post('/api/linkedin/generate', { post, language });
       setResult(response.data.message);
     } catch (error) {
       console.error(error);
@@ -92,7 +92,7 @@ export default function TwitterPost() {
             <div className="flex gap-3">
               <div>
                 <Select onValueChange={(value: string) => {
-                  setBehaviour(value);
+                  setLanguage(value);
                 }}>
                   <SelectTrigger className="w-[110px] h-[34px] hover:bg-white/10 transition-all duration-300 text-xs bg-transparent rounded-lg before:bg-opacity-90 border border-neutral-300 dark:border-neutral-700 text-black dark:text-white p-2 truncate">
                     <SelectValue placeholder="English" />

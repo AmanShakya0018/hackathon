@@ -4,9 +4,7 @@ import "./globals.css";
 import Provider from "@/provider/provider";
 import { Toaster } from "@/components/ui/toaster";
 import { Analytics } from "@vercel/analytics/react"
-import Navbar from "@/components/navbar";
 import { cn } from "@/lib/utils";
-import Footer from "@/components/footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -29,9 +27,7 @@ export default function RootLayout({
       >
         <Provider>
           <div className={cn("relative flex min-h-dvh flex-col")}>
-            <Navbar />
             <main className="flex-1 px-6">{children}</main>
-            <Footer />
             <Toaster />
           </div>
         </Provider>
