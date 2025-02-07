@@ -24,10 +24,9 @@ export default function AboutPage() {
           <div className="space-y-6">
             <h2 className="text-2xl font-semibold">Our Story</h2>
             <p className="text-muted-foreground">
-              Welcome to our project! We&apos;re passionate about sharing knowledge and insights
-              about technology, development, and digital innovation. Our mission is to
-              create valuable content that helps developers and tech enthusiasts stay
-              ahead in this ever-evolving industry.
+              Welcome to our Language Translator, a fast and efficient tool designed to break language barriers and connect the world.
+              Whether you&apos;re a traveler, student, or professional,
+              our translator helps you seamlessly convert text between multiple languages with high accuracy.
             </p>
             <p className="text-muted-foreground">
               Founded in 2024, we&apos;ve been committed to delivering high-quality articles,
